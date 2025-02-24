@@ -6,8 +6,9 @@ document.getElementById('surpriseBtn').addEventListener('click', function() {
     // Mostrar el gif
     document.getElementById('gifContainer').style.display = 'block';
 
-    // Cambiar el mensaje
-    document.getElementById('message').innerHTML = '🌟 Cuídate mucho, te dejo un miso spicy para ti. <span id="ramenEmoji">🍜</span> 🌟';
+  // Cambiar el mensaje
+    document.getElementById('message').innerHTML = '🌟 Cuídate mucho, te dejo un miso spicy. 🌟 <br><span id="ramenEmoji">🍜</span>';
+
 
     //Cambiar h1
     document.getElementById('title').innerHTML = 'Elfo, lo siento mucho'
