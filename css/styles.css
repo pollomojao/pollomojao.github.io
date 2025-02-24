@@ -1,0 +1,178 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(45deg, #fde2e2, #f8c8dc, #e8b6e8, #c8a2f8);
+    background-size: 600% 600%;
+    animation: gradientAnimation 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid #f8c8dc; /* Borde suave */
+
+}
+
+.content:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #d1a6e2; /* Lavanda suave */
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra de texto */
+
+}
+
+.message {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    opacity: 0.9;
+    transition: opacity 0.5s ease; /* Transición suave */
+
+}
+
+.gif-container {
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-out;
+    display: none;
+}
+
+.cat-gif {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #f8c8dc; /* Borde suave */
+
+}
+
+.footer {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #9a79d8; /* Malva */
+    transition: opacity 0.5s ease; /* Transición suave */
+    display: none;
+}
+
+.surprise-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: white;
+    background-color: #f4b8d1;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+}
+
+.surprise-btn:hover {
+    background-color: #d1a6e2;
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
+
+}
+
+#ramenEmoji {
+    font-size: 2em; /* Puedes ajustar el valor de 2em según el tamaño que prefieras */
+}
+
+/* Animación del fondo degradado */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Respuesta a la visualización del gif y mensaje */
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .message {
+        font-size: 0.9em;
+    }
+
+    .quote {
+        font-size: 1em;
+    }
+
+    .surprise-btn {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .message {
+        font-size: 0.8em;
+    }
+
+    .quote {
+        font-size: 0.9em;
+    }
+
+    .surprise-btn {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}
